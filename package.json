@@ -1,0 +1,18 @@
+{
+  "name": "reactify",
+  "version": "1.0.0",
+  "description": "Generate react project structure and get building.",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "automation",
+    "front-end",
+    "react-tools",
+    "js",
+    "web"
+  ],
+  "author": "Kim Jisena",
+  "license": "MIT"
+}
