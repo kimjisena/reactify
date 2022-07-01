@@ -13,7 +13,6 @@ function dir (name, files) {
             for (let f of files) {
                 f = format(f);
                 const handle = await fs.open((path + f + '.jsx'), 'w+');
-                // todo: add boilerplate
                 boiler = `import React from 'react';\n\nfunction ${f} (props) {\n\n    return (\n        <>\n        </>\n    );\n}\n\nexport default ${f};`
                 await handle.writeFile(boiler, 'utf8');
                 await handle.close();
