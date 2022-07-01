@@ -6,12 +6,16 @@ function dir (name, files) {
     let path = `./src/components/${name}/`;
 
     const helper = async () => {
+        let boiler;
         try {
             await fs.mkdir(path, {recursive: true});
 
             for (let f of files) {
-                const handle = await fs.open((path + format(f)), 'w+');
+                f = format(f);
+                const handle = await fs.open((path + f + '.jsx'), 'w+');
                 // todo: add boilerplate
+                boiler = `import React from 'react';\n\nfunction ${f} (props) {\n\n    return (\n        <>\n        </>\n    );\n}\n\nexport default ${f};`
+                await handle.writeFile(boiler, 'utf8');
                 await handle.close();
             }
         } catch (err) {
@@ -42,7 +46,7 @@ function dis (compts) {
 }
 
 function format (componet) {
-    return componet[0].toUpperCase() + componet.substring(1) + '.jsx';
+    return componet[0].toUpperCase() + componet.substring(1);
 }
 function main () {
     let des, mob, tab, ut;
