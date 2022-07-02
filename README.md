@@ -1,4 +1,4 @@
-# Reactify
+# Reactry
 
 Generate react project directories and files based on your components.
 
@@ -6,23 +6,23 @@ Generate react project directories and files based on your components.
 
 **using `npm`**
 
-- `$ npm i -D reactify`
+- `$ npm i -D reactry`
 
 **using `yarn`**
 
-- `$ yarn add --save-dev reactify`
+- `$ yarn add --save-dev reactry`
 
 ## How to use.
 
 - setup your project using `create-react-app`
-- add `reactify.config.js` to your project root directory
-- run `npm reactify` to generate your component files
+- add `reactry.config.js` to your project root directory
+- run `npm reactry` to generate your component files
 
 ## reactify.config.js
 
-`reactify.config.js` exports a `components` object of this structure:
+`reactry.config.js` exports a `components` object of this structure:
 ```js
-// ./reactify.config.js
+// ./reactry.config.js
 
 module.exports = {
     components: {

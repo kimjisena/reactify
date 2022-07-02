@@ -1,5 +1,5 @@
 {
-  "name": "reactify",
+  "name": "reactry",
   "version": "1.0.0",
   "description": "Generate react project structure and get building.",
   "main": "index.js",
@@ -8,12 +8,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kimjisena/reactify.git"
+    "url": "https://github.com/kimjisena/reactry.git"
   },
   "bugs": {
-    "url": "https://github.com/kimjisena/reactify/issues"
+    "url": "https://github.com/kimjisena/reactry/issues"
   },
-  "homepage": "https://github.com/kimjisena/reactify",
+  "homepage": "https://github.com/kimjisena/reactry",
   "keywords": [
     "automation",
     "front-end",
