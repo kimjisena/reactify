@@ -1,6 +1,6 @@
 # Reactify
 
-Generate react project directories and files based on your design.
+Generate react project directories and files based on your components.
 
 ## Installation
 
