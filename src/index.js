@@ -1,13 +1,13 @@
 #! /usr/bin/env node
 const {main} = require('./main.js');
-const {components} = require('../../../reactry.config.js');
+const path = require('path');
 
-if (components === undefined) {
-    throw {
-        name: 'ReactifyConfigError',
-        message: 'Can not access reactify.config.js',
-        more: 'Are you sure you have reactify.config.js in your project root directory?'
-    }
-} else {
+let config = path.resolve('./reactry.config.js');
+
+try {
+    const {components} = require(config);
     main(components);
+} catch (err) {
+    console.log('Can not find reactify.config.js\n');
+    console.log('Are you sure you have reactify.config.js in your project root directory?');
 }

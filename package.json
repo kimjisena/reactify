@@ -1,6 +1,6 @@
 {
   "name": "reactry",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Generate react project structure and get building.",
   "main": "index.js",
   "scripts": {

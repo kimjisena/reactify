@@ -1,16 +1,18 @@
 const fs = require('fs/promises');
+const path = require('path');
 
 function dir (name, files) {
-    let path = `./src/components/${name}/`;
+    let pth = path.resolve(`./src/components/${name}`);
+    console.log(pth);
 
     const helper = async () => {
         let blp;
         try {
-            await fs.mkdir(path, {recursive: true});
+            await fs.mkdir(pth, {recursive: true});
 
             for (let f of files) {
                 f = format(f);
-                const handle = await fs.open((path + f + '.jsx'), 'w+');
+                const handle = await fs.open((pth + '/' + f + '.jsx'), 'w+');
                 blp = `import React from 'react';\n\nfunction ${f} (props) {\n\n    return (\n        <>\n        </>\n    );\n}\n\nexport default ${f};`;
                 await handle.writeFile(blp, 'utf8');
                 await handle.close();

@@ -16,7 +16,7 @@ Generate react project directories and files based on your components.
 
 - setup your project using `create-react-app` (recommended)
 - add `reactry.config.js` to your project root directory
-- run `npm reactry` to generate your component files
+- run `npx reactry` to generate your component files
 
 ## reactify.config.js
 
