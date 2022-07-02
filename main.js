@@ -4,15 +4,15 @@ function dir (name, files) {
     let path = `./src/components/${name}/`;
 
     const helper = async () => {
-        let boiler;
+        let blp;
         try {
             await fs.mkdir(path, {recursive: true});
 
             for (let f of files) {
                 f = format(f);
                 const handle = await fs.open((path + f + '.jsx'), 'w+');
-                boiler = `import React from 'react';\n\nfunction ${f} (props) {\n\n    return (\n        <>\n        </>\n    );\n}\n\nexport default ${f};`;
-                await handle.writeFile(boiler, 'utf8');
+                blp = `import React from 'react';\n\nfunction ${f} (props) {\n\n    return (\n        <>\n        </>\n    );\n}\n\nexport default ${f};`;
+                await handle.writeFile(blp, 'utf8');
                 await handle.close();
             }
         } catch (err) {
