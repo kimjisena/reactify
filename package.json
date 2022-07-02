@@ -6,12 +6,21 @@
   "scripts": {
     "test": "jest"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kimjisena/reactify.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kimjisena/reactify/issues"
+  },
+  "homepage": "https://github.com/kimjisena/reactify",
   "keywords": [
     "automation",
     "front-end",
     "react-tools",
     "js",
-    "web"
+    "web",
+    "mobile-first"
   ],
   "author": "Kim Jisena",
   "license": "MIT"
