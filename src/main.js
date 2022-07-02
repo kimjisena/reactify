@@ -21,8 +21,6 @@ function dir (name, files) {
     }
 
     helper();
-    console.log("Project files created successfully.");
-    console.log("Happy coding!");
 
     return 0;
 }
@@ -53,6 +51,9 @@ function main (compts) {
     if (utl!== undefined) {
         dir('util', utl);
     }
+
+    console.log("Project files created successfully.");
+    console.log("Happy coding!");
 
     return 0;
 }
