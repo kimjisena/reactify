@@ -3,8 +3,6 @@ const path = require('path');
 
 function dir (name, files) {
     let pth = path.resolve(`./src/components/${name}`);
-    console.log(pth);
-
     const helper = async () => {
         let blp;
         try {
@@ -23,6 +21,8 @@ function dir (name, files) {
     }
 
     helper();
+    console.log("Project files created successfully.");
+    console.log("Happy coding!");
 
     return 0;
 }
