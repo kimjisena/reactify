@@ -1,5 +1,6 @@
+#! /usr/bin/env node
 const {main} = require('./main.js');
-const {components} = require('./reactry.config.js');
+const {components} = require('../reactry.config.js');
 
 if (components === undefined) {
     throw {
